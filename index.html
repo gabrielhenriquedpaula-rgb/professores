@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlanoFácil Edu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Plano de Aula Inteligente</h1>
+    <form id="planoForm">
+      <label>Tema do Estudo: <input type="text" name="tema" /></label>
+      <label>Ano/Série: <input type="text" name="serie" /></label>
+      <label>Unidade Temática: <input type="text" name="unidade" /></label>
+      <label>Objetos de Conhecimento: <input type="text" name="objetos" /></label>
+      <label>Número de Aulas: <input type="number" name="aulas" /></label>
+      <label>Carga Horária por Dia: <input type="number" name="carga" /></label>
+      <label><input type="checkbox" name="explicativo" /> Deseja texto explicativo?</label>
+      <label><input type="checkbox" name="imagens" /> Deseja incluir imagens?</label>
+      <label>Observações:<textarea name="observacoes"></textarea></label>
+      <button type="submit">Gerar Plano</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
